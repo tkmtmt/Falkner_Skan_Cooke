@@ -16,5 +16,7 @@ g = 1-exp(-f(:).*eta(:));
 
 Ue = df*cos(gamma)^2+g*sin(gamma)^2;
 We = cos(gamma)*sin(gamma)*(g-df);
-
+figure(1)
+plot(eta,df,eta,g);
+figure(2)
 plot(eta,Ue,eta,We)
